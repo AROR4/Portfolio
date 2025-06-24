@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes scroll-x-reverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll-x {
+  animation: scroll-x 10s linear infinite;
+}
+
+.animate-scroll-x-reverse {
+  animation: scroll-x-reverse 10s linear infinite;
+}
+
+body {
+  background-color: #111010;
+  color: #e4e4e4;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
