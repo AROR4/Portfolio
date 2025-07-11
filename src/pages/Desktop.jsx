@@ -293,17 +293,21 @@ const DesktopPage = () => {
       <div className="grid grid-cols-4 gap-6 h-[300px] auto-rows-[minmax(150px,auto)] ">
         <div className="col-span-3">
           <Card className="h-full p-6 bg-gray-900/50 backdrop-blur-sm border border-white/5">
-            <h2 className="text-3xl font-bold text-center mb-8">
-              Days I <span className="text-indigo-500">LeetCode</span>
-            </h2>
-            <LeetCodeCalendar
-              username="raghavarora9899"
-              blockSize={15}
-              blockMargin={5}
-              fontSize={16}
-              style={{ maxWidth: "1200px" }} 
-            />
-            
+            <div style={{ width: '100%', border: '2px solid transparent', boxSizing: 'border-box' }}>
+  <img
+    src="https://leetcard.jacoblin.cool/raghavarora9899?theme=transparent&font=baloo&ext=activity"
+    alt="LeetCode stats"
+    style={{
+      width: '100%',
+      height: 'auto',
+      display: 'block',
+      border: '2px solid transparent',
+    }}
+  />
+</div>
+
+           
+
           </Card>
         </div>
 
